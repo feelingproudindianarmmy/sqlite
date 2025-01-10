@@ -12,4 +12,14 @@ INSERT INTO Persons(PersonsID,FirstName,LastName,Adress,City,Job)
 VALUES(1011,'alission','Becker','niger','bulgaria','computer.E'),
 (1981,'askers','cristensen','chad','nigeria','software developer');
 
-SELECT * FROM Persons WHERE PersonsID==1011;
+
+INSERT INTO Persons(PersonsID,FirstName,LastName,Adress,City,Job)
+VALUES(1061,'olive','busker','rakas','srilanka','doctor'),
+(1681,'kilyan','mbappe','paris','france','footballer');
+SELECT * FROM Persons 
+WHERE Adress='niger' OR City='bulgaria';
+UPDATE Persons
+SET FirstName='goli'
+WHERE PersonsID=1011;
+
+
