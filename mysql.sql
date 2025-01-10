@@ -12,4 +12,4 @@ INSERT INTO Persons(PersonsID,FirstName,LastName,Adress,City,Job)
 VALUES(1011,'alission','Becker','niger','bulgaria','computer.E'),
 (1981,'askers','cristensen','chad','nigeria','software developer');
 
-SELECT FirstName,LastName FROM Persons;
+SELECT * FROM Persons WHERE PersonsID==1011;
