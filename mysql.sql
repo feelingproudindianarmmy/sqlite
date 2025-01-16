@@ -19,7 +19,24 @@ VALUES(1061,'olive','busker','rakas','srilanka','doctor'),
 SELECT * FROM Persons 
 WHERE Adress='niger' OR City='bulgaria';
 UPDATE Persons
-SET FirstName='goli'
+SET FirstName='olive'
 WHERE PersonsID=1011;
 
+SELECT * FROM Persons
 
+SELECT COUNT(FirstName) AS Name
+FROM Persons WHERE PersonsID==1011
+
+SELECT SUM(PersonsID) 
+FROM Persons 
+
+SELECT AVG(PersonsID) 
+FROM Persons 
+
+SELECT MIN(PersonsID) 
+FROM Persons;
+
+SELECT MAX(PersonsID) 
+FROM Persons;
+
+SELECT COUNT(DISTINCT FirstName) FROM Persons
