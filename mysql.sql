@@ -35,8 +35,15 @@ FROM Persons
 #using min
 SELECT MIN(PersonsID) 
 FROM Persons;
-#using maxx
+#using max
 SELECT MAX(PersonsID) 
 FROM Persons;
-#using distint 
+#using distinct 
 SELECT COUNT(DISTINCT FirstName) FROM Persons
+
+SELECT COUNT(PersonsID),Adress
+FROM Persons
+GROUP BY Adress
+
+SELECT*FROM Persons
+ORDER BY FirstName;
