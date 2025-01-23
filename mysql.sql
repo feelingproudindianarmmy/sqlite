@@ -26,17 +26,17 @@ SELECT * FROM Persons
 
 SELECT COUNT(FirstName) AS Name
 FROM Persons WHERE PersonsID==1011
-
+#using sum
 SELECT SUM(PersonsID) 
 FROM Persons 
-
+#using avg
 SELECT AVG(PersonsID) 
 FROM Persons 
-
+#using min
 SELECT MIN(PersonsID) 
 FROM Persons;
-
+#using maxx
 SELECT MAX(PersonsID) 
 FROM Persons;
-
+#using distint 
 SELECT COUNT(DISTINCT FirstName) FROM Persons
