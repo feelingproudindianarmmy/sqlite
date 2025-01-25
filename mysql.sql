@@ -47,3 +47,12 @@ GROUP BY Adress
 
 SELECT*FROM Persons
 ORDER BY FirstName;
+
+SELECT* FROM Persons
+UPDATE Persons set Job=NULL WHERE FirstName='olive';
+
+SELECT* FROM Persons
+WHERE Job is NOT NULL;
+
+SELECT * FROM Persons
+WHERE PersonsID NOT BETWEEN 1980 AND 2000;
