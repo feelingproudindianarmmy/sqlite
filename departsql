@@ -1,4 +1,4 @@
-CREATE TABLE IF NOT EXISTS Salesman(
+CREATE TABLE  Salesman(
 SalesmanID int,
 SalesmanName varchar(50),
 salary varchar(50),
@@ -13,6 +13,7 @@ Values(1011,'chintu',56,000,80,12344,'O.P.U'),
 Values(1111,'bunty',67,000,90,123444,'S.A.U'),
 Values(2001,'aadil',75,000,90,12345,'O.O.I'),
 Values(2011,'aaksh',95,000,90,23890,'O.P.M');
+
 
 CREATE TABLE IF NOT EXISTS Customer(
 customerID int,
@@ -29,3 +30,22 @@ Values(1081,'cristan','singing',12,'engeneering'),
 Values(1171,'hustober','Playing',34,'doctor'),
 Values(2061,'pratik','eating',45,'plumber'),
 Values(2051,'aaditya','drawing',24,'carpenter');
+
+CREATE TABLE IF NOT EXISTS Items(
+Itemname int,
+Price varchar(50),
+Ex.date int,
+m.date int,
+quantity int,
+
+
+);
+
+INSERT INTO Items(Itemname,price,Ex.date,m.date,quantity)
+Values('ball',20,'2nd jan',2003,2),
+Values('laptop',20,000,'3rd aug',2022,3),
+Values('bag',700,'6th dec',2009,4),
+Values('pencil',10,'27th june',2023,5),
+Values('shoes',3000,'1st jan',2002,8);
+
+SELECT * FROM Salesman
