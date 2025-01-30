@@ -1,15 +1,31 @@
-CREATE TABLE IF NOT EXISTS Department(
-employeeID int,
-Name varchar(50),
+CREATE TABLE IF NOT EXISTS Salesman(
+SalesmanID int,
+SalesmanName varchar(50),
 salary varchar(50),
 ManagerID int,
-Department name varchar(50),
+Departmentname varchar(50),
 
 );
 
-INSERT INTO Department(employeeID,Name,salary,ManagerID,Department name)
-Values(1001,'ramesh',45,000,90,'O.P.I'),
-Values(1011,'chintu',56,000,80,'O.P.U'),
-Values(1111,'bunty',67,000,90,'S.A.U'),
-Values(2001,'aadil',75,000,90,'O.O.I'),
-Values(2011,'aaksh',95,000,90,'O.P.M')
+INSERT INTO Salesman(SalesmanID,SalesmanName,salary,ManagerID,Departmentname)
+Values(1001,'ramesh',45,000,90,1234,'O.P.I'),
+Values(1011,'chintu',56,000,80,12344,'O.P.U'),
+Values(1111,'bunty',67,000,90,123444,'S.A.U'),
+Values(2001,'aadil',75,000,90,12345,'O.O.I'),
+Values(2011,'aaksh',95,000,90,23890,'O.P.M');
+
+CREATE TABLE IF NOT EXISTS Customer(
+customerID int,
+customerName varchar(50),
+hobby varchar(50),
+Age int,
+Job varchar(50),
+
+);
+
+INSERT INTO Customer(customerID,customerName,hobby,Age,Job)
+Values(1091,'olimag','dancing',23,' '),
+Values(1081,'cristan','singing',12,'engeneering'),
+Values(1171,'hustober','Playing',34,'doctor'),
+Values(2061,'pratik','eating',45,'plumber'),
+Values(2051,'aaditya','drawing',24,'carpenter');
